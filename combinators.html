@@ -22,15 +22,27 @@
         } */
 
         /* general sibling selector (~) */
-        div~p {
+        /* div~p {
             color: red;
+        } */
+
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        p::first-line {
+            color: green;
         }
     </style>
 </head>
 
 <body>
-    <p>p tag first</p>
-    <div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate a reprehenderit
+        quam molestiae
+        quisquam, quo pariatur natus, qui aperiam enim modi impedit sequi, in eligendi! Repellat voluptatum debitis
+        unde!</p>
+    <!-- <div>
         <p>p tag directly inside div</p>
         <section>
             <p>P tag inside section
@@ -44,7 +56,7 @@
     <section></section>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsum, praesentium voluptate nulla maiores illo
         iusto est perferendis vel excepturi. Accusamus beatae qui ratione nulla omnis, incidunt tempore veritatis harum!
-    </p>
+    </p> -->
 </body>
 
 </html>
