@@ -17,14 +17,19 @@
         } */
 
         /* adjacent sibiling selector (+) */
-        div+p {
+        /* div+p {
+            color: red;
+        } */
+
+        /* general sibling selector (~) */
+        div~p {
             color: red;
         }
     </style>
 </head>
 
 <body>
-
+    <p>p tag first</p>
     <div>
         <p>p tag directly inside div</p>
         <section>
@@ -33,9 +38,13 @@
         </section>
         <p>p tag outside section but inside div</p>
 
-    </div> 
+    </div>
     <p>p tag outside div</p>
     <p>2nd p tag</p>
+    <section></section>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsum, praesentium voluptate nulla maiores illo
+        iusto est perferendis vel excepturi. Accusamus beatae qui ratione nulla omnis, incidunt tempore veritatis harum!
+    </p>
 </body>
 
 </html>
