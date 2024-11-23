@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web page title</title>
+    <meta name="keyword" content="html,css,js,first webpage,my frist page">
+
+    <link rel="stylesheet" href="home.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        P {
+            font-family: "Oswald", sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    </div>
+
+    <h1>Hello Heading one</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, molestias possimus non rerum magni dolores
+        excepturi in fugiat assumenda cumque qui quae ad libero et reprehenderit corporis dolorem. Placeat, adipisci.
+    </p>
+
+    <table border="1" style="border-collapse: collapse; margin-bottom: 10px;">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Nimal</td>
+            <td>Sunimal</td>
+            <td>25</td>
+            <td>Panadura</td>
+        </tr>
+        <tr>
+            <td>Kamal</td>
+            <td>Nimal</td>
+            <td>30</td>
+            <td>Horana</td>
+        </tr>
+    </table>
+    <table border="1" style="border-collapse: collapse; margin-bottom: 10px;">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Nimal</td>
+            <td rowspan="2">Sunimal</td>
+            <td>25</td>
+            <td>Panadura</td>
+        </tr>
+        <tr>
+            <td>Kamal</td>
+            <!-- <td>Sunimal</td> -->
+            <td>30</td>
+            <td>Horana</td>
+        </tr>
+        <tr>
+            <td>Kamal</td>
+            <td>Sunimal</td>
+            <td>30</td>
+            <td>Horana</td>
+        </tr>
+    </table>
+
+    <form>
+        <div style="margin-bottom: 10px;">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="contact">Contact</label>
+            <input type="tel" id="contact" name="contact">
+        </div>
+        <div style="margin-bottom: 10px;">
+             <button type="button">Save Details</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
