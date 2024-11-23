@@ -7,12 +7,17 @@
     <title>CSS Combinators</title>
     <style>
         /*descendant selector (space)*/
-         /* div p{ 
+        /* div p{ 
            color: red; 
         } */
 
         /* child selector (>) */
-        div>p{
+        /* div>p{
+            color: red;
+        } */
+
+        /* adjacent sibiling selector (+) */
+        div+p {
             color: red;
         }
     </style>
@@ -28,8 +33,9 @@
         </section>
         <p>p tag outside section but inside div</p>
 
-    </div>
+    </div> 
     <p>p tag outside div</p>
+    <p>2nd p tag</p>
 </body>
 
 </html>
