@@ -10,17 +10,23 @@
             margin: 0;
         }
 
-        .header {
-            height: 90px;
-            width: 100%;
+        .header {  
             background-color: aqua;
             display: flex;
+            padding: 10px 20px;
 
         }
         .navbar>li{
             list-style-type: none;
             display: inline;
             margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .navbar>li:hover{
+            cursor: pointer;
+            color: red;
+           
         }
     </style>
 </head>
@@ -33,7 +39,7 @@
         <div class="nav">
             <ul class="navbar">
                 <li>Home</li>
-                <li>Contact US</li>
+                <li>Contact Us</li>
                 <li>About Us</li>
             </ul>
         </div>
