@@ -120,6 +120,14 @@
             let contact = document.getElementById("contact").value
             console.log("contact : ", contact);
             if (name != "" && address != "" && contact != "") {
+
+                const save_obj = {
+                    "name": name,
+                    "address": address,
+                    "contact": contact
+                }
+                console.log(save_obj);
+
                 // form is validate
                 console.log(" Form is valid");
                 // sample_div.style.display = "none"
