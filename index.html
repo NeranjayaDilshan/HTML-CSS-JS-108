@@ -77,7 +77,7 @@
         </tr>
     </table>
 
-    <form>
+    <form onsubmit="validate(event)">
         <div style="margin-bottom: 10px;">
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
@@ -91,7 +91,7 @@
             <input type="tel" id="contact" name="contact">
         </div>
         <div style="margin-bottom: 10px;">
-            <button type="button">Save Details</button>
+            <button type="submit">Save Details</button>
         </div>
 
     </form>
@@ -100,14 +100,35 @@
 
 
     <script>
-        // let element = document.getElementById("name")
-        // console.log(element);
+
 
         let sample_div = document.getElementById("sample_div")
         console.log(sample_div);
         sample_div.innerHTML = "ABC"
         sample_div.style.color = "red"
         sample_div.style.backgroundColor = "blue"
+
+        function validate(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value
+            console.log("name : ", name);
+
+            let address = document.getElementById("address").value
+            console.log("address : ", address);
+
+            let contact = document.getElementById("contact").value
+            console.log("contact : ", contact);
+            if (name != "" && address != "" && contact != "") {
+                // form is validate
+                console.log(" Form is validate");
+
+            } else {
+                // form is invalid
+                console.log(" Form is invalid");
+            }
+
+        }
 
 
     </script>
