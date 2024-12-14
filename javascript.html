@@ -150,6 +150,43 @@
             index++;
         }
 
+        const cars = ["BMW", "AUDI", "BENZ"];
+        console.log(cars);
+
+        console.log(cars[0]);
+        console.log(cars[1]);
+        console.log(cars[2]);
+
+        console.log("length : ", cars.length);
+
+
+        console.log("============ For Loop ===============");
+        for (let i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+        }
+
+        console.log("============ While Loop ===============");
+
+        let j = 0
+        while (j < cars.length) {
+            console.log(cars[j]);
+            j++;
+        }
+
+        console.log("============ For In Loop ===============");
+
+        for (let i in cars) {
+            console.log(i);
+            console.log(cars[i]);
+
+        }
+
+        console.log("============ For of Loop ===============");
+
+        for (let i of cars) {
+            console.log(i);
+
+        }
 
     </script>
 </body>
