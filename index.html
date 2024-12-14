@@ -121,11 +121,14 @@
             console.log("contact : ", contact);
             if (name != "" && address != "" && contact != "") {
                 // form is validate
-                console.log(" Form is validate");
-
+                console.log(" Form is valid");
+                // sample_div.style.display = "none"
+                sample_div.innerHTML = "Form is valid"
             } else {
                 // form is invalid
                 console.log(" Form is invalid");
+                alert(" Form is invalid")
+                sample_div.innerHTML = "Form is invalid"
             }
 
         }
