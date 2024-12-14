@@ -97,6 +97,45 @@
         // (condition) ? value1 : value2
         (sinhala < maths) ? console.log("Sinhala is less than Maths") : console.log("Sinhala is greater than maths");
 
+        // switch
+        // switch (condition) {
+        //     case x:
+        //         //code block
+        //         break;
+        //     case y:
+        //         //code block
+        //         break;
+        // }
+
+        console.log(new Date().getDay());
+
+        let day = ""
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuseday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+            default:
+                day = "No day"
+        }
+        console.log(day);
 
 
 
