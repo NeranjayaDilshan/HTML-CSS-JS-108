@@ -21,6 +21,9 @@
             color: red;
         }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -110,7 +113,7 @@
 
         function validate(event) {
             event.preventDefault();
-
+            $("#sample_div").show()
             let name = document.getElementById("name").value
             console.log("name : ", name);
 
@@ -143,6 +146,23 @@
 
 
     </script>
+
+    <script>
+        // document.getElementById("address").value
+        // $(selector).action()
+
+        // $("p")
+        // $("#id")
+        // $(".class")
+
+        console.log($("#sample_div"));
+
+        $("#sample_div").html("Inner Html By Jquery")
+        $("#sample_div").hide()
+
+    </script>
+
+
 </body>
 
 </html>
